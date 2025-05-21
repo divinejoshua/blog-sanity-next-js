@@ -14,7 +14,7 @@ export default async function BlogPost({ params }: Props) {
 
   return (
     <article className="prose max-w-2xl mx-auto p-6">
-      <h1>{post.title}</h1>
+      <h1 className='text-3xl font-bold mb-6'>{post.title}</h1>
       <PortableTextRenderer value={post.body} />
     </article>
   )
